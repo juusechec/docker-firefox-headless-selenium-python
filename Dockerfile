@@ -2,7 +2,6 @@ FROM ubuntu:17.10
 ENV LC_ALL C
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
-ENV OAS_EXTERNAL_ENV docker
 
 MAINTAINER Jorge Useche <juusechec@gmail.com>
 USER root

@@ -17,21 +17,10 @@ def is_alert_present(wd):
 
 class toc_test(unittest.TestCase):
     def setUp(self):
-        self.ci = os.getenv('OAS_EXTERNAL_ENV')
-        if os.getenv('OAS_EXTERNAL_ENV') == None:
-            # for local tests
-            self.wd = webdriver.Firefox()
-        else:
-            # from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-            # binary = FirefoxBinary('/usr/bin/firefox', log_file=sys.stdout)
-            # binary.add_command_line_options('-headless')
-            # self.wd = webdriver.Firefox(firefox_binary=binary)
-            #self.wd = webdriver.PhantomJS()
-            #self.wd.set_window_size(1120, 550)
-            self.wd = webdriver.Remote(desired_capabilities={
-                "browserName": "firefox",
-                "platform": "LINUX",
-            })
+        self.wd = webdriver.Remote(desired_capabilities={
+            "browserName": "firefox",
+            "platform": "LINUX",
+        })
         self.wd.implicitly_wait(60)
 
     def open_sedes(self):

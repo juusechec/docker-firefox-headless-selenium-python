@@ -19,6 +19,7 @@ class toc_test(unittest.TestCase):
     def setUp(self):
         self.ci = os.getenv('OAS_EXTERNAL_ENV')
         if os.getenv('OAS_EXTERNAL_ENV') == None:
+            # for local tests
             self.wd = webdriver.Firefox()
         else:
             # from selenium.webdriver.firefox.firefox_binary import FirefoxBinary

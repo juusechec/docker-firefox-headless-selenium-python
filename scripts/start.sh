@@ -11,4 +11,3 @@ until $(curl --output /dev/null --silent --head --fail http://localhost:4444/wd/
     sleep 1
 done
 printf '\n'
-bash

@@ -35,4 +35,4 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.19.0/geckod
 # Run at begin
 ADD ./scripts/ /home/root/scripts
 EXPOSE 4444 5999
-ENTRYPOINT ["sh", "/home/root/scripts/start.sh"]
+CMD ["sh", "/home/root/scripts/start.sh"]

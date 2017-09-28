@@ -18,6 +18,7 @@ RUN apt-get -qqy --no-install-recommends install \
   xfonts-cyrillic \
   openjdk-8-jre-headless \
   python3-pip \
+  curl \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 RUN pip3 install selenium
 # Create user for use selenium-server-standalone

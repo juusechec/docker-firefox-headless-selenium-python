@@ -12,6 +12,8 @@ docker-compose exec selenium python3 /app/scripts/example_test.py
 vinagre localhost:5900 # pass 'secret'
 ```
 
+In docker hub https://hub.docker.com/r/juusechec/firefox-headless-selenium-python
+
 ## Referencias
 - https://intoli.com/blog/running-selenium-with-headless-firefox/
 - https://github.com/SeleniumHQ/docker-selenium/tree/master/StandaloneFirefox
